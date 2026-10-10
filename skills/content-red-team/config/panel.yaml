@@ -1,0 +1,95 @@
+# content-red-team panel configuration.
+# Edit freely: add, remove, reweight or rewrite members. No code changes needed.
+# Limits: min 3, max 10 enabled members (the judge is extra).
+#
+# Override this file per project by passing --config path/to/panel.yaml or by
+# placing a file named content-red-team.panel.yaml in the directory you run from.
+
+model: claude-sonnet-5-5        # overridden by env LLM_MODEL
+judge_model: null               # null = same as model; env LLM_JUDGE_MODEL overrides
+max_tokens: 6000
+max_concurrency: 8              # parallel member calls per phase
+persona_cache_days: 14          # refresh reference-channel persona cards after this
+
+# Debate shape. Round 1 = cross-critique, round 2 = rebuttal. (Fixed at 2 in v1.)
+rounds: 2
+
+members:
+  - id: reference_youtuber
+    name: Reference YouTuber
+    role: reference_creator
+    weight: 1.0
+    real_person: true            # forces the "simulated opinion" label on all output
+    lens: >
+      How the reference creator would judge this: hook style, pacing, thumbnail
+      taste, humour, what they would cut. Built from public transcripts and videos.
+    # Fill these in. Nothing is hardcoded to any creator.
+    channel_urls: []             # e.g. ["https://www.youtube.com/@somechannel"]
+    handle: reference-creator    # cache file name: .cache/personas/<handle>.md
+
+  - id: stakeholder
+    name: Stakeholder
+    role: stakeholder
+    weight: 1.0
+    lens: >
+      Client, brand owner or agency lead. Brand fit, promise vs delivery, CTA and
+      offer conversion, reputational risk, match with the strategy brief. Must flag
+      income, job-guarantee, medical or legal claims.
+
+  - id: target_viewer
+    name: Target Viewer
+    role: target_viewer
+    weight: 1.0
+    # Change this to whoever you are actually making the video for.
+    audience: "an early-career professional preparing for job interviews"
+    lens: >
+      Would I click, would I stay, is it useful and clear, is there jargon, do I feel
+      talked down to.
+
+  - id: retention_analyst
+    name: Algorithm & Retention Analyst
+    role: analyst
+    weight: 1.0
+    lens: >
+      CTR potential, curiosity gap, title length and keywords, mobile legibility,
+      first 20 seconds, retention beats, Shorts vs long-form rules. Metrics are
+      estimates unless supplied by a real tool.
+
+  - id: cold_scroller
+    name: Cold Scroller
+    role: cold_scroller
+    weight: 1.0
+    lens: >
+      Has never heard of the creator. Judges thumbnail plus title in 2 seconds on a
+      phone feed, then the first 10 seconds of the script.
+
+  - id: domain_gatekeeper
+    name: Domain Gatekeeper
+    role: gatekeeper
+    weight: 1.0
+    # Change to any domain expert: hiring manager, clinician, senior engineer, etc.
+    domain: "a hiring manager in the target field"
+    lens: >
+      Credibility, accuracy, does it sound like someone who really knows the field.
+      Must flag unsupported or risky factual claims.
+
+  # Add a 7th member by copying a block above, or by writing one inline:
+  # - id: skeptical_parent
+  #   name: Skeptical Parent
+  #   role: custom
+  #   weight: 0.5
+  #   lens: "Would I let my teenager watch this? Is it honest?"
+  #   card: |
+  #     Background: ...
+  #     Values: ...
+  #     Pet peeves: ...
+  #     Voice: ...
+  #     Known bias: ...
+  #     Signature questions: 1) ... 2) ... 3) ...
+
+judge:
+  id: judge
+  name: Judge
+  lens: >
+    Does not score the content. Moderates, resolves disputes with reasons (never by
+    averaging), issues the verdict and the rewrites.

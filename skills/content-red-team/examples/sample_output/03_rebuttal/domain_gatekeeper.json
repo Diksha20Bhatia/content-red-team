@@ -1,0 +1,10 @@
+{
+  "responses": [
+    {
+      "to_member": "judge",
+      "stance": "defend",
+      "reasoning": "Nothing aimed at me. [[OUT:p3:domain_gatekeeper]]"
+    }
+  ],
+  "score_changes": []
+}

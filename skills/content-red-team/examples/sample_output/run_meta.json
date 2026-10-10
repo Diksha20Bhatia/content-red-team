@@ -1,0 +1,9 @@
+{
+  "mode": "A",
+  "mode_note": "DRY-RUN with a mocked LLM: output is templated to exercise the pipeline, it is not a real review",
+  "model": "mock",
+  "seconds": 1.1,
+  "max_concurrent_calls": 5,
+  "calls": 19,
+  "warnings": []
+}

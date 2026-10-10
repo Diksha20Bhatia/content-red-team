@@ -1,0 +1,25 @@
+# Scoring dimensions per asset. Scores are 1-10 judgment, not data.
+# Add or rename dimensions freely; reviewers score exactly the keys listed here.
+# Detailed guidance for each asset lives in references/rubric_<asset>.md.
+
+title:
+  clarity: "Is the promise understood in one read?"
+  curiosity: "Does it open a gap the viewer wants closed, without being a lie?"
+  keywords_fit: "Searchable / recognisable terms, sensible length (about 40-60 chars before truncation on mobile)"
+  audience_fit: "Speaks to the stated target viewer in their language"
+  honesty: "The video can actually deliver what the title promises"
+
+thumbnail:
+  glance_legibility: "Readable at 120px wide: text size, contrast, number of elements"
+  emotion_focal_point: "One clear focal point; a face/emotion/object that earns the click"
+  title_synergy: "Adds to the title instead of repeating it; works as a pair"
+  brand_fit: "Consistent with channel look and brief; not off-putting"
+  honesty: "Promise matches the video; no misleading imagery"
+
+script:
+  hook_first_20s: "Does the first 20 seconds earn the next minute?"
+  structure_pacing: "Clear beats, no dead sections, payoff placed well"
+  value_clarity: "Concrete, useful, specific; viewer knows what they gained"
+  voice_authenticity: "Sounds like a real person, not a template; right register"
+  credibility: "Claims are accurate and supportable"
+  cta_conversion: "CTA / offer is relevant, well placed, not pushy"

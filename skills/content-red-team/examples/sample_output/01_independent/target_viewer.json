@@ -1,0 +1,108 @@
+{
+  "summary": "Target Viewer mock summary [[OUT:p1:target_viewer]]",
+  "reviews": [
+    {
+      "asset": "title",
+      "scores": {
+        "clarity": 4,
+        "curiosity": 4,
+        "keywords_fit": 5,
+        "audience_fit": 6,
+        "honesty": 5
+      },
+      "overall": 5,
+      "keep": [
+        {
+          "claim": "Title length on a mobile feed: works as intended",
+          "evidence": "Title A: \"How I'd Prepare for a Product Manager Interview in 7 Days (Without Burning Out)\" (79 chars)",
+          "severity": "minor"
+        }
+      ],
+      "fix": [
+        {
+          "claim": "Curiosity gap versus honest promise: is a problem",
+          "evidence": "Title A: \"How I'd Prepare for a Product Manager Interview in 7 Days (Without Burning Out)\" (79 chars)",
+          "severity": "minor"
+        }
+      ],
+      "risks": [
+        "Target Viewer: unsupported claims need checking (mock)"
+      ],
+      "rewrite": "[MOCK rewrite by Target Viewer]",
+      "confidence": "medium"
+    },
+    {
+      "asset": "thumbnail",
+      "scores": {
+        "glance_legibility": 4,
+        "emotion_focal_point": 4,
+        "title_synergy": 5,
+        "brand_fit": 8,
+        "honesty": 7
+      },
+      "overall": 6,
+      "keep": [
+        {
+          "claim": "Amount of text on the thumbnail: works as intended",
+          "evidence": "Thumbnail A at 120px preview: contrast_std=67.0, edge_density_120=0.146, dominant colour #292b55, text \"STOP MEMORISING\"",
+          "severity": "minor"
+        }
+      ],
+      "fix": [
+        {
+          "claim": "Single focal point and emotion: is a problem",
+          "evidence": "Thumbnail A at 120px preview: contrast_std=67.0, edge_density_120=0.146, dominant colour #292b55, text \"STOP MEMORISING\"",
+          "severity": "major"
+        }
+      ],
+      "risks": [
+        "Target Viewer: unsupported claims need checking (mock)"
+      ],
+      "rewrite": "[MOCK rewrite by Target Viewer]",
+      "confidence": "medium"
+    },
+    {
+      "asset": "script",
+      "scores": {
+        "hook_first_20s": 8,
+        "structure_pacing": 8,
+        "value_clarity": 5,
+        "voice_authenticity": 7,
+        "credibility": 7,
+        "cta_conversion": 8
+      },
+      "overall": 7,
+      "keep": [
+        {
+          "claim": "Cold open versus context-setting intro: works as intended",
+          "evidence": "L011: \"Day three: practise product sense questions out loud. Record yourself. It is\"",
+          "severity": "minor"
+        },
+        {
+          "claim": "Jargon level for the audience: works as intended",
+          "evidence": "L007: \"Here is the thing most people get wrong: they memorise frameworks like\"",
+          "severity": "minor"
+        }
+      ],
+      "fix": [
+        {
+          "claim": "CTA placement and tone: is a problem",
+          "evidence": "L001: \"# Script: PM interview prep in 7 days\"",
+          "severity": "minor"
+        }
+      ],
+      "risks": [
+        "Target Viewer: unsupported claims need checking (mock)"
+      ],
+      "rewrite": "[MOCK rewrite by Target Viewer]",
+      "confidence": "medium"
+    }
+  ],
+  "variant_ranking": {
+    "title": [
+      "A",
+      "B"
+    ]
+  },
+  "ranking_reason": "mock ranking"
+}

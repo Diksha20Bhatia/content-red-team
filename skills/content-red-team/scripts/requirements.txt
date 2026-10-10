@@ -1,0 +1,8 @@
+pydantic>=2.5
+pyyaml>=6.0
+pillow>=10.0
+anthropic>=0.40        # Mode A only
+langgraph>=0.2         # Mode A only
+pypdf>=4.0             # optional: PDF scripts
+python-docx>=1.0       # optional: richer .docx handling (a zip-based fallback is built in)
+youtube-transcript-api>=0.6   # optional: persona_builder transcripts

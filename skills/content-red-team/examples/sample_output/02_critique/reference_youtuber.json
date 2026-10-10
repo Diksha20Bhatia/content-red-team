@@ -1,0 +1,27 @@
+{
+  "challenges": [
+    {
+      "target_member": "stakeholder",
+      "quoted_point": "Curiosity gap versus honest promise: works as intended",
+      "comment": "I disagree on 'Curiosity gap versus honest promise'. [[OUT:p2:reference_youtuber]]"
+    },
+    {
+      "target_member": "stakeholder",
+      "quoted_point": "Title length on a mobile feed: is a problem",
+      "comment": "I disagree on 'Title length on a mobile feed'. [[OUT:p2:reference_youtuber]]"
+    },
+    {
+      "target_member": "stakeholder",
+      "quoted_point": "Single focal point and emotion: works as intended",
+      "comment": "I disagree on 'Single focal point and emotion'. [[OUT:p2:reference_youtuber]]"
+    }
+  ],
+  "endorsements": [
+    {
+      "target_member": "target_viewer",
+      "quoted_point": "Title length on a mobile feed: works as intended",
+      "comment": "Fair point I underweighted. [[OUT:p2:reference_youtuber]]"
+    }
+  ],
+  "flags": []
+}

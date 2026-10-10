@@ -1,0 +1,68 @@
+{
+  "responses": [
+    {
+      "to_member": "reference_youtuber",
+      "stance": "defend",
+      "reasoning": "Holding my position on that. [[OUT:p3:stakeholder]]"
+    },
+    {
+      "to_member": "reference_youtuber",
+      "stance": "concede",
+      "reasoning": "Conceding on that. [[OUT:p3:stakeholder]]"
+    },
+    {
+      "to_member": "reference_youtuber",
+      "stance": "defend",
+      "reasoning": "Holding my position on that. [[OUT:p3:stakeholder]]"
+    },
+    {
+      "to_member": "target_viewer",
+      "stance": "defend",
+      "reasoning": "Holding my position on that. [[OUT:p3:stakeholder]]"
+    },
+    {
+      "to_member": "target_viewer",
+      "stance": "defend",
+      "reasoning": "Holding my position on that. [[OUT:p3:stakeholder]]"
+    },
+    {
+      "to_member": "target_viewer",
+      "stance": "defend",
+      "reasoning": "Holding my position on that. [[OUT:p3:stakeholder]]"
+    },
+    {
+      "to_member": "retention_analyst",
+      "stance": "defend",
+      "reasoning": "Holding my position on that. [[OUT:p3:stakeholder]]"
+    },
+    {
+      "to_member": "cold_scroller",
+      "stance": "defend",
+      "reasoning": "Holding my position on that. [[OUT:p3:stakeholder]]"
+    },
+    {
+      "to_member": "cold_scroller",
+      "stance": "defend",
+      "reasoning": "Holding my position on that. [[OUT:p3:stakeholder]]"
+    },
+    {
+      "to_member": "cold_scroller",
+      "stance": "defend",
+      "reasoning": "Holding my position on that. [[OUT:p3:stakeholder]]"
+    },
+    {
+      "to_member": "domain_gatekeeper",
+      "stance": "defend",
+      "reasoning": "Holding my position on that. [[OUT:p3:stakeholder]]"
+    }
+  ],
+  "score_changes": [
+    {
+      "asset": "title",
+      "dimension": "clarity",
+      "before": 6,
+      "after": 5,
+      "because": "reference_youtuber's point on 'Title length on a mobile feed: is a prob' exposed a weakness I had missed"
+    }
+  ]
+}

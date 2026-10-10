@@ -1,0 +1,12 @@
+{
+  "name": "content-red-team",
+  "description": "Panel-and-debate red-teaming for YouTube titles, thumbnails and scripts",
+  "owner": { "name": "Diksha Bhatia" },
+  "plugins": [
+    {
+      "name": "content-red-team",
+      "source": "./",
+      "description": "6 simulated reviewers + judge stress-test your YouTube title, thumbnail and script"
+    }
+  ]
+}

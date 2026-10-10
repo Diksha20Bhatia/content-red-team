@@ -1,0 +1,10 @@
+Mode A: DRY-RUN with a mocked LLM: output is templated to exercise the pipeline, it is not a real review
+Verdicts: title: rework | thumbnail: rework | script: rework
+Top 3 fixes:
+1. [thumbnail] Single focal point and emotion: is a problem
+2. [title] Title length on a mobile feed: is a problem
+3. [thumbnail] Amount of text on the thumbnail: is a problem
+Biggest disagreement: Title length on a mobile feed (Reference YouTuber vs Domain Gatekeeper); ruling: Treat as a problem (severity blocker): fix before shipping.
+Reference-creator output is a simulated opinion based on public content, not the real person's view.
+Scores are judgment, not data.
+Files: red-team-output/<project>/<timestamp>/ (verdict.md, rewrites.md, scorecard.md, debate_transcript.md)

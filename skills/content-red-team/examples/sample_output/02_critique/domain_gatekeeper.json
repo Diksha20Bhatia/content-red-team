@@ -1,0 +1,27 @@
+{
+  "challenges": [
+    {
+      "target_member": "reference_youtuber",
+      "quoted_point": "Title length on a mobile feed: works as intended",
+      "comment": "I disagree on 'Title length on a mobile feed'. [[OUT:p2:domain_gatekeeper]]"
+    },
+    {
+      "target_member": "reference_youtuber",
+      "quoted_point": "Curiosity gap versus honest promise: is a problem",
+      "comment": "I disagree on 'Curiosity gap versus honest promise'. [[OUT:p2:domain_gatekeeper]]"
+    },
+    {
+      "target_member": "reference_youtuber",
+      "quoted_point": "Amount of text on the thumbnail: works as intended",
+      "comment": "I disagree on 'Amount of text on the thumbnail'. [[OUT:p2:domain_gatekeeper]]"
+    }
+  ],
+  "endorsements": [
+    {
+      "target_member": "stakeholder",
+      "quoted_point": "Curiosity gap versus honest promise: works as intended",
+      "comment": "Fair point I underweighted. [[OUT:p2:domain_gatekeeper]]"
+    }
+  ],
+  "flags": []
+}

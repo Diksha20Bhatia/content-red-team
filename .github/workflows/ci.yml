@@ -1,0 +1,38 @@
+name: ci
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+          cache-dependency-path: skills/content-red-team/scripts/requirements.txt
+      - name: Install
+        run: pip install -r skills/content-red-team/scripts/requirements.txt pytest ruff
+      - name: Lint
+        run: ruff check .
+      - name: Tests (mocked LLM, no secrets)
+        run: python -m pytest skills/content-red-team/scripts/tests -q
+      - name: Dry-run end to end
+        run: |
+          S=skills/content-red-team
+          python $S/scripts/run_panel.py run --dry-run --mock-delay 0 --project ci-sample \
+            --title $S/examples/sample_input/title.txt --thumbnail $S/examples/sample_input/thumbnail.png \
+            --script $S/examples/sample_input/script.md --brief $S/examples/sample_input/brief.md --format long
+          test -f red-team-output/ci-sample/*/verdict.md
+      - name: Build zip
+        run: ./scripts/build_zip.sh
+      - uses: actions/upload-artifact@v4
+        if: matrix.python == '3.11'
+        with:
+          name: content-red-team-zip
+          path: dist/content-red-team.zip

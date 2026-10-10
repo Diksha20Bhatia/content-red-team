@@ -1,0 +1,68 @@
+{
+  "responses": [
+    {
+      "to_member": "stakeholder",
+      "stance": "defend",
+      "reasoning": "Holding my position on that. [[OUT:p3:reference_youtuber]]"
+    },
+    {
+      "to_member": "stakeholder",
+      "stance": "defend",
+      "reasoning": "Holding my position on that. [[OUT:p3:reference_youtuber]]"
+    },
+    {
+      "to_member": "stakeholder",
+      "stance": "defend",
+      "reasoning": "Holding my position on that. [[OUT:p3:reference_youtuber]]"
+    },
+    {
+      "to_member": "target_viewer",
+      "stance": "concede",
+      "reasoning": "Conceding on that. [[OUT:p3:reference_youtuber]]"
+    },
+    {
+      "to_member": "retention_analyst",
+      "stance": "defend",
+      "reasoning": "Holding my position on that. [[OUT:p3:reference_youtuber]]"
+    },
+    {
+      "to_member": "retention_analyst",
+      "stance": "defend",
+      "reasoning": "Holding my position on that. [[OUT:p3:reference_youtuber]]"
+    },
+    {
+      "to_member": "retention_analyst",
+      "stance": "defend",
+      "reasoning": "Holding my position on that. [[OUT:p3:reference_youtuber]]"
+    },
+    {
+      "to_member": "cold_scroller",
+      "stance": "defend",
+      "reasoning": "Holding my position on that. [[OUT:p3:reference_youtuber]]"
+    },
+    {
+      "to_member": "domain_gatekeeper",
+      "stance": "defend",
+      "reasoning": "Holding my position on that. [[OUT:p3:reference_youtuber]]"
+    },
+    {
+      "to_member": "domain_gatekeeper",
+      "stance": "defend",
+      "reasoning": "Holding my position on that. [[OUT:p3:reference_youtuber]]"
+    },
+    {
+      "to_member": "domain_gatekeeper",
+      "stance": "defend",
+      "reasoning": "Holding my position on that. [[OUT:p3:reference_youtuber]]"
+    }
+  ],
+  "score_changes": [
+    {
+      "asset": "title",
+      "dimension": "clarity",
+      "before": 5,
+      "after": 4,
+      "because": "target_viewer's point on 'Title length on a mobile feed: works as ' exposed a weakness I had missed"
+    }
+  ]
+}

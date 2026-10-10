@@ -1,0 +1,7 @@
+line-length = 140
+target-version = "py311"
+extend-exclude = ["red-team-output", ".cache"]
+
+[lint]
+select = ["E", "F", "I", "B"]
+ignore = ["E731", "E701", "E501", "B905"]

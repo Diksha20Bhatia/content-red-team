@@ -1,0 +1,8 @@
+{
+  "name": "content-red-team",
+  "version": "1.0.0",
+  "description": "Red-team a YouTube title, thumbnail and script with a panel of 6 simulated reviewers plus a judge: independent analysis, 2 rounds of debate, verdict and rewrites.",
+  "author": { "name": "Diksha Bhatia" },
+  "license": "MIT",
+  "keywords": ["youtube", "review", "thumbnail", "script", "critique", "panel"]
+}
